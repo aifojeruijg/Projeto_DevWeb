@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: #191919;
+}
+span {
+    color: #f90029;
+}
+
+.container {
+            display: grid;
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-areas: 
+            "card card"
+            "card card"
+            "card card"
+            "card card";
+            grid-gap: 60px;
+            justify-content: center;
+            
+        }
+
+        .product-image {
+            height: 250px;
+            width: 450px;;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .card {
+            max-width: 450px;
+            min-width: 300px;
+            height: 450px;
+            background-color: #191919;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+
+        #img-1 {
+            background-image: url(/img/mustang-removebg-preview\ \(1\).png);
+        }
+
+        #img-2 {
+            background-image: url(/img/rollsroyce-removebg-preview.png);
+            margin-left: 20px;
+        }
+        #img-3 {
+            background-image: url(/img/HURACANLP610-removebg-preview.png);
+            margin-left: 20px;
+        }
+        #img-4 {
+            background-image: url(/img/escalade-removebg-preview\ \(1\).png);
+        }
+        #img-5 {
+            background-image: url(/img/novitec-ferrari-f8-tributo-n-largo-5-removebg-preview.png);
+            margin-left: 20px;
+        }
+        #img-6 {
+            background-image: url(/img/audiR8-removebg-preview.png)
+        }
+        #img-7 {
+            background-image: url(/img/urus-removebg-preview.png);
+            margin-left: 10px;
+        }
+        #img-8 {
+            background-image: url(/img/ram-removebg-preview.png);
+        }
+  
+        .card h3 {
+            color: white;
+            border-left: 4px solid #f90029;
+            margin-left: 10px;
+            font-size: 28px;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+
+        .card p {
+            color: white;
+            margin-left: 20px;
+            font-size: 19px;
+            margin-top: 5px;
+        }
+
+        .card-btn {
+            display: block;
+            margin: 0px 12px 0px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid transparent;
+            background: #f90029;
+            padding: 18px;
+            color: white;
+            border-radius: 10px;
+            transition: .5s;
+            margin-top: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .card-btn:hover {
+            background: transparent;
+            color: white;
+            border: 2px solid #f90029;
+        }
+
+        .catalogo {
+            margin-top: 50px;
+            width: 100%;
+            text-align: center;
+            height: 200px;
+            min-width: 300px;
+            background: #191919;
+        }
+            
+        .catalogo h3 {
+            color: #f90029;
+            font-size: 26px;
+            margin: 10px;
+        }
+
+        .catalogo p {
+            color: white;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .catalogo .filtro {
+            width: 60%;
+            height: 120px;
+            background-color: #191919;
+            margin: 0 auto;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #f90029;
+        }
+
+        .procura {
+            width: 75%;
+            height: 50px;
+            border-radius: 10px 0px 0px 10px;
+            text-indent: 10px;
+            transition: .5s;
+            border: 2px solid #f90029;
+            background-color: white;
+            font-size: 15px;
+        }
+
+        .procura-btn {
+            width: 15%;
+            height: 50px;
+            border-radius: 0px 10px 10px 0px;
+            border: none;
+            background-color: #f90029;
+            color:white;
+            cursor: pointer;
+            transition: .5s;
+            font-weight: bold;
+            border: 1px solid #f90029;
+            font-size: 15px;
+        }
+
+        .procura:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .procura-btn:hover {
+            background-color: black;
+        }
+
+    @media (max-width: 980px) {
+        body {
+            overflow-x: hidden;
+        }
+        
+        .container{
+            margin: 0 auto;
+            grid-template-areas: 
+            "card"
+            "card"
+            "card"
+            "card"
+            "card"
+            "card"
+            "card"
+            "card";
+            justify-content: center;
+            grid-gap: 30px;
+        }
+
+        .catalogo .filtro {
+            width: 60%;
+        }
+
+        .procura {
+            width: 60%;
+        }
+
+        .procura-btn {
+            width: 20%;
+        }
+
+}
+     @media (max-width: 450px) {
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .container{
+            margin: 0 auto;
+            grid-template-areas: 
+            "card"
+            "card"
+            "card"
+            "card"
+            "card"
+            "card"
+            "card"
+            "card";
+            grid-gap: 30px;
+        }
+
+        .card {
+            width: 380px;
+        }
+
+        .product-image {
+            width: auto;
+        }
+
+        .catalogo .filtro {
+            width: 100%;
+            height: 70px;
+        }
+
+        .procura {
+            width: 70%;
+        }
+
+        .procura-btn {
+            width: 25%;
+        }
+
+
+    }

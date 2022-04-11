@@ -1,0 +1,196 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Login</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+           
+            body {
+                margin: 0;
+                font-family: 'Roboto Slab', serif;
+            }
+    
+            body * {
+                box-sizing: border-box;
+            }
+    
+            span {
+                color: #f90029;
+            }
+            .main {
+                width: 100vw;
+                height: 100vh;
+                background: #232323;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+    
+            .logo {
+                margin-top: 20px;
+                font-size: 45px;
+                margin-bottom: 0;
+                color: white;
+                text-decoration: none;
+            }
+    
+            .login {
+                width: 50vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .card {
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 30px 35px;
+                background: #191919;
+                border-radius: 20px;
+                box-shadow: 0px 10px 40px black;
+            }
+    
+            .card h1 {
+                color: #f9004d;
+                font-weight: 800;
+                margin-top:8px;
+            }
+    
+            .text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin: 15px 0px;
+            }
+    
+            .text input {
+                width: 100%;
+                border: none;
+                border-radius: 10px;
+                padding: 15px;
+                background: #222222;
+                color: white;
+                font-size: 12pt;
+                box-shadow: 0px 10px 40px black;
+                outline: none;
+                box-sizing: border-box;
+                letter-spacing: 2px;
+            }
+    
+            .text label {
+                color: #fb4673;
+                margin-bottom: 10px;
+            }
+    
+            .text input::placeholder {
+                color: rgb(178, 178, 178)
+            }
+    
+            .btn {
+                width: 100%;
+                margin: 20px;
+                border-radius: 10px;
+                font-weight: 800;
+                letter-spacing: 2px;
+                background:#f9004d;
+                cursor: pointer;
+                box-shadow: 0px 10px 40px -12px #f9004d98;
+                border: 2px solid transparent;
+                transition: .5s;
+                text-decoration: none; 
+            }
+            .btn p{
+                display: flex;
+                justify-content: center;
+                color: white;
+            }
+            
+    
+            .btn:hover {
+                background-color: transparent;
+                border: 2px solid #f9004d;
+            }
+    
+            .links{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                margin-top: 8px;
+            }
+    
+            .links a {
+                text-decoration: none;
+                color: white;
+                transition: .5s;
+                padding:2px;
+            }
+    
+            .links a:hover {
+                color: #f90029;
+            }
+            @media only screen and (max-width: 950px) {
+                .card {
+                    width: 85%;
+                }
+
+            }
+            @media only screen and (max-width: 650px) {
+                .main {
+                    flex-direction: column;
+                }
+    
+                .login {
+                    width: 100%;
+                    height: auto;
+                }
+    
+                .card {
+                    width: 90%;
+                }
+                
+                
+            }
+    
+    
+        </style>
+    </head>
+    <body>
+    
+        <div class="main">
+            <a class="logo" href="/"><i class="fa-solid fa-car" id="car"></i>Alfa<span>Cars</span></a>
+                <div class="login">
+                    <div class="card">
+                        <h1>Login</h1>
+                        <div class="text">
+                            <label for="usuario">Usuário</label>
+                            <input type="text" name="usuario" placeholder="Usuário...">
+                        <div class="text">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha...">
+                        </div>
+                        </div>
+                        <a class="btn" href="404.html"><p>Entrar</p></a>
+                        <div class="links">
+                            <a href="index.html">Voltar para o início</a>
+                            <a href="cadastro.html">Ainda não sou cadastrado</a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        
+    </body>
+    </html>
