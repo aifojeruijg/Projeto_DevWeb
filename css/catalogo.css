@@ -56,25 +56,21 @@ span {
 
         #img-2 {
             background-image: url(/img/rollsroyce-removebg-preview.png);
-            margin-left: 20px;
         }
         #img-3 {
             background-image: url(/img/HURACANLP610-removebg-preview.png);
-            margin-left: 20px;
         }
         #img-4 {
             background-image: url(/img/escalade-removebg-preview\ \(1\).png);
         }
         #img-5 {
             background-image: url(/img/novitec-ferrari-f8-tributo-n-largo-5-removebg-preview.png);
-            margin-left: 20px;
         }
         #img-6 {
             background-image: url(/img/audiR8-removebg-preview.png)
         }
         #img-7 {
             background-image: url(/img/urus-removebg-preview.png);
-            margin-left: 10px;
         }
         #img-8 {
             background-image: url(/img/ram-removebg-preview.png);
@@ -104,13 +100,13 @@ span {
             text-align: center;
             border: 2px solid transparent;
             background: #f90029;
-            padding: 18px;
+            padding: 13px;
             color: white;
             border-radius: 10px;
             transition: .5s;
             margin-top: 10px;
             font-size: 20px;
-            text-transform: uppercase;
+            
         }
 
         .card-btn:hover {
@@ -204,7 +200,22 @@ span {
             "card"
             "card";
             justify-content: center;
-            grid-gap: 30px;
+            grid-gap: 20px;
+        }
+
+        #img-2 {
+            width: 380px;
+            margin-left: 20px;
+        }
+
+        #img-3 {
+            width: 380px;
+            margin-left: 20px;
+        }
+
+        #img-5 {
+            width: 390px;
+            margin-left: 8px;
         }
 
         .catalogo .filtro {

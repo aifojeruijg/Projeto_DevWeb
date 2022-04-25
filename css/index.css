@@ -22,16 +22,14 @@ body {
 }
 
 .sobre {
-    height: 100vh;
+    height: 700px;
     width: 100%;
-    background-image: url(/img/lambo_sobre.jpg);
+    background-image: url(/img/ferrari_sobre.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: 50px;
 }
 
 .titulo-conteudo {
-    display: inline;
     text-align: center;
     color: white;
 }
@@ -46,24 +44,26 @@ body {
     color: white;
     margin: 0;
     font-size: 20px;
+    padding-top: 50px;
 }
 
 
 .sobre-conteudo h4 {
     color: white;
-    padding-left: 240px;
-    padding-top: 20px;
+    width: 62%;
+    text-align: center;
     font-weight: bold;
     font-size: 25px;
 }
 
 .sobre-conteudo p {
     color: white;
-    padding-left: 240px;
-    padding-top: 30px;
-    width: 45%;
-    text-align: justify;
+    margin-top: 30px;
+    width: 60%;
+    text-align: left;
     font-size: 18px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .servicos {
@@ -208,11 +208,6 @@ h5 {
         height: 100vh;
     }
 
-    .sobre{
-        background-image: none ;
-        height: 70vh;
-    }
-
     .sobre-conteudo {
         margin: 0;
     }
@@ -225,13 +220,18 @@ h5 {
         font-size: 22px;
     }
     .sobre-conteudo h4 {
-        padding: 40px;
+        padding: 10px;
         text-align: center;
+        left: 0;
+        right: 0;
+        width: 100%;
+
     }
 
     .titulo-servicos h2{
         width: 100vw;
         padding: 20px;
+        margin-top: 0;
     }
 
     .servicos {
@@ -241,6 +241,24 @@ h5 {
     .box {
         flex-direction: column;
     }
+}
+
+    @media(max-width:690px){
+        .sobre {
+            height: 850px;
+        }
+
+        .sobre-p{
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+    }
+
+
+    @media(max-width:400px){
+        .sobre {
+            height: 700px;
+        }
+}
 
     
-}

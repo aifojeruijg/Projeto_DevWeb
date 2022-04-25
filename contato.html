@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/menu.css">
+    <title>Contato</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .contato {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url(/img/contato.jpg);
+        background-size: cover;
+    }
+
+    .contato .content{
+        max-width: 800px;
+        text-align: center;
+        color: white;
+    }
+
+    .contato .content h2 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .contato .content p {
+        font-weight: 400;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .contatoInfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .contatoInfo .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+
+    .container .contatoInfo .box .icon {
+        min-width: 60px;
+        height: 60px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+
+    .container .contatoInfo .box .text {
+        display: flex;
+        font-size: 16px;
+        color: white;
+        flex-direction: column;
+        font-weight: 300;
+        margin-left: 20px;
+    }
+
+    .container .contatoInfo .box .text h3 {
+        color: #f9004d;
+        font-weight: bold;
+    }
+
+    .contatoForm {
+        width: 40%;
+        padding: 30px;
+        background: #191919;
+        color: white;
+        border-radius: 10px;
+        letter-spacing: 1px;
+    }
+
+    .contatoForm h2 {
+        font-size: 30px;
+        color: #f9004d;
+        font-weight: 400;
+    }
+
+    .contatoForm .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contatoForm .inputBox input,.contatoForm .inputBox textarea{
+        width: 100%;
+        padding: 15px 0;
+        font-size: 14px;
+        margin: 15px 0;
+        outline: none;
+        border: none;
+        background: #222222;
+        color: white;
+        resize: none;
+        border-radius: 5px;
+        box-shadow: 0px 5px 20px black;
+        padding-left: 15px;
+    }
+
+    .contatoForm .inputBox .button {
+        cursor: pointer;
+        padding: 10px 100px;
+        text-decoration: none;
+        border-radius: 10px;
+        color: white;
+        background: #f9004d;
+        border: 2px solid transparent;
+        font-size: 16px;
+        box-shadow: 0px 10px 40px -12px #f9004d98;
+        transition: .4s;
+    }
+
+    .contatoForm .inputBox .button:hover {
+        background: transparent;
+        border: 2px solid #f9004d;
+    }
+
+    .nav-menu {
+        z-index: 10;
+    }
+
+    @media (max-width: 920px) {
+
+        .contato {
+            padding: 50px;
+        }
+
+        .container {
+            flex-direction: column;
+        }
+
+        .container .contatoInfo {
+            margin-bottom: 30px;
+            width: 100%;
+           
+        }
+
+        .contatoForm {
+            width: 100%;
+        }
+
+    }
+
+    
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="/"><i class="fa-solid fa-car" id="car"></i>Alfa<span>Cars</span></a>
+            <div class="mobile-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#outros">Outros Serviços</a></li>
+                <li><a href="#index.htmlcontato">Contato</a></li>
+                <a href="login.html" class="btn">Entrar</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contato">
+        <div class="content">
+            <h2>Entre em contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores ex nisi cupiditate fugiat eius corporis accusantium? Tenetur, ad quam?</p>
+        </div>
+        <div class="container">
+            <div class="contatoInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Endereço</h3>
+                        <p>Praça Gen. Osório, 125 <br>- Centro, Curitiba - PR, <br> 80020-010</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Telefone</h3>
+                        <p>(41)12345-6789</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>E-mail</h3>
+                        <p>alfacars@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contatoForm">
+                <form>
+                    <h2>Envie uma mensagem</h2>
+                    <div class="inputBox">
+                        <h5>Nome Completo</h5>
+                        <input type="text" placeholder="Escreva seu nome completo" >
+                    </div>
+                    <div class="inputBox">
+                        <h5>E-mail</h5>
+                        <input type="text" placeholder="Escreva um e-mail válido" >
+                    </div>
+                    <div class="inputBox">
+                        <h5>Mensagem</h5>
+                        <textarea placeholder="Escreva a sua mensagem..." ></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <a class="button" href="404.html">Enviar</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="/js/mobile-navbar.js"></script>
+    
+</body>
+</html>
