@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+    
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.contato {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(/img/contato.jpg);
+    background-size: cover;
+}
+
+.contato .content{
+    max-width: 800px;
+    text-align: center;
+    color: white;
+}
+
+.contato .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.contato .content p {
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contatoInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contatoInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contatoInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contatoInfo .box .text {
+    display: flex;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.container .contatoInfo .box .text h3 {
+    color: #f9004d;
+    font-weight: bold;
+}
+
+.contatoForm {
+    width: 40%;
+    padding: 30px;
+    background: #191919;
+    color: white;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+.contatoForm h2 {
+    font-size: 30px;
+    color: #f9004d;
+    font-weight: 400;
+}
+
+.contatoForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contatoForm .inputBox input,.contatoForm .inputBox textarea{
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    margin: 15px 0;
+    outline: none;
+    border: none;
+    background: #222222;
+    color: white;
+    resize: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px black;
+    padding-left: 15px;
+}
+
+.contatoForm .inputBox .button {
+    cursor: pointer;
+    padding: 10px 100px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    background: #f9004d;
+    border: 2px solid transparent;
+    font-size: 16px;
+    box-shadow: 0px 10px 40px -12px #f9004d98;
+    transition: .4s;
+}
+
+.contatoForm .inputBox .button:hover {
+    background: transparent;
+    border: 2px solid #f9004d;
+}
+
+.nav-menu {
+    z-index: 10;
+}
+
+@media (max-width: 920px) {
+
+    .contato {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contatoInfo {
+        margin-bottom: 30px;
+        width: 100%;
+       
+    }
+
+    .contatoForm {
+        width: 100%;
+    }
+
+}
+
