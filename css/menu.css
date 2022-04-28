@@ -8,6 +8,7 @@ nav {
     justify-content: space-around;
     background: #101010;
     height: 15vh ;
+    min-height: 60px;
 }
 
 
@@ -62,7 +63,7 @@ nav ul li a:hover {
     width: 35px;
     height: 5px;
     margin: 5px auto;
-    -webkit-transition: all .4s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .4s ease-in-out;
     background-color: white;
 }
@@ -84,7 +85,7 @@ nav ul li a:hover {
     }
 
     .mobile-menu.active .line:nth-child(1) {
-        transform: translateY(10px) rotate(45deg);
+        transform:  translateY(10px) rotate(45deg);
     }
 
     .mobile-menu.active .line:nth-child(3) {
@@ -95,12 +96,12 @@ nav ul li a:hover {
         display: flex;
         position: fixed;
         left: -100%;
-        top: 12vh;
+        top: 14vh;
         gap: 30px;
         flex-direction: column;
         background-color: #101010;
         width: 100%;
-        height: 300px;
+        height: 280px;
         position: absolute;
         text-align: center;
         transition: .4s;
