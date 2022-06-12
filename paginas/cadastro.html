@@ -180,34 +180,35 @@
         <!-- <a class="logo" href="/"><i class="fa-solid fa-car" id="car"></i>Alfa<span>Cars</span></a> -->
         <div class="cadastro">
             <div class="titulo"><h4>Cadastre-se para receber atualizações do nosso catálogo</h4></div>
-        <form action="#">
+        <script src="/js/db.js"></script>
+        <form onsubmit="cadastrarUsuario()">
             <div class="usuario">
                 <div class="input">
                     <h5 class="detalhes">Nome Completo</h5>
-                    <input type="text" placeholder="Digite seu nome" required>
+                    <input type="text" id="name" placeholder="Digite seu nome" required>
                 </div>
                 <div class="input">
                     <h5 class="detalhes">Usuario</h5>
-                    <input type="text" placeholder="Digite seu usuario" required>
+                    <input type="text" id="user" placeholder="Digite seu usuario" required>
                 </div>
                 <div class="input">
                     <h5 class="detalhes">E-mail</h5>
-                    <input type="text" placeholder="Digite um e-mail válido" required> 
+                    <input type="text" id="email" placeholder="Digite um e-mail válido" required> 
                 </div>
                 <div class="input">
                     <h5 class="detalhes">Telefone</h5>
-                    <input type="text" placeholder="Digite um telefone para contato" required>
+                    <input type="text" id="tell" placeholder="Digite um telefone para contato" required>
                 </div>
                 <div class="input">
                     <h5 class="detalhes">Senha</h5>
-                    <input type="password" placeholder="Digite uma senha" required>
+                    <input type="password" id="password" placeholder="Digite uma senha" required>
                 </div>
                 <div class="input">
                     <h5 class="detalhes">Confirme sua senha</h5>
-                    <input type="text" placeholder="Digite a senha novamente" required>
+                    <input type="password" id="passwordConfirm" placeholder="Digite a senha novamente" required>
                 </div>
             </div>
-            <a class="btn" href="404.html">Enviar</a>
+            <button type="submit" class="btn">Enviar</button>
             <div class="links">
                 <a href="index.html">Voltar para o início</a>
                 <a href="login.html">Voltar para o login</a>
