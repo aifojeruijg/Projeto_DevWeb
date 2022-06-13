@@ -8,5 +8,48 @@
       "password": "123",
       "id": 1
     }
-  ]
+  ],
+  
+   "carros": [ 
+     {
+        "foto":"audiR8-removebg-preview.png",
+        "nome": "Mustang Mach 1 2021",
+        "desc": "Motor 5.0L V8 com 470cv. Transmissão automática de 10 velocidades"
+      },
+      {
+        "foto":"audiR8-removebg-preview.png",
+        "nome": "Rolls Royce Ghost 2021",
+        "desc": "Motor 6.7L V12 com 563cv. Transmissão automática de 8 velocidades"
+      },
+      {
+        "foto":"audiR8-removebg-preview.png",
+        "nome": "Lamborghini Huracan LP 640-4 2021",
+        "desc": "Motor 5.2L V10 com 640cv. Transmissão automática de 7 velocidades"
+      },
+      {
+        "foto":"audiR8-removebg-preview.png",
+        "nome": "Cadillac Escalade Sport Platinum 2022",
+        "desc": "Motor 6.2L V8 com 420cv. Transmissão automática de 10 velocidades"
+      },
+      {
+        "foto":"audiR8-removebg-preview.png",
+        "nome": "Ferrari SF90 Stradale",
+        "desc": "Motor 3.9L V8 com 780cv. Transmissão automática de 8 velocidades"
+      },
+      {
+        "foto":"audiR8-removebg-preview.png",
+        "nome": "Audi R8 Spyder 2022",
+        "desc": "Motor 5.2L V10 com 540cv. Transmissão automática de 7 velocidades"
+      },
+      {
+        "foto":"audiR8-removebg-preview.png",
+        "nome": "Lamborghini Urus Capsule 2022",
+        "desc": "Motor 4.0L V8 com 641cv. Transmissão automática de 8 velocidades"
+      },
+      {
+        "foto":"audiR8-removebg-preview.png",
+        "nome": "RAM 1500 RTX 2022",
+        "desc": "Motor 6.2L V8 com 702cv. Transmissão automática de 8 velocidades"
+      }
+    ]
 }
