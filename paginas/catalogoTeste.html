@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/catalogo.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Document</title>
+    <style>
+        #container{
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-areas: "card card";
+            grid-gap: 60px;
+            justify-content: center;
+            height: 2000px;
+        }
+
+        #procura-btn{
+            width: 15%;
+            height: 50px;
+            border-radius: 0px 10px 10px 0px;
+            border: none;
+            background-color: #f90029;
+            color:white;
+            cursor: pointer;
+            transition: .5s;
+            font-weight: bold;
+            border: 1px solid #f90029;
+            font-size: 15px;
+        }
+
+        #procura-btn:hover {
+            background-color: black;
+        }
+        
+        @media (max-width: 980px){
+            #container{
+                margin: 0 auto;
+                grid-template-areas: 
+                "card"
+                "card"
+                "card"
+                "card"
+                "card"
+                "card"
+                "card"
+                "card";
+                justify-content: center;
+                grid-gap: 20px;
+                height: 4000px;
+            }
+
+            #procura-btn {
+            width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><i class="fa-solid fa-car" id="car"></i>Auto<span>Mobil</span></a>
+            <div class="mobile-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#outros">Serviços</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <a href="login.html" class="btn">Entrar</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="catalogo">
+        <div class="conteudo">
+            <div class="titulo-conteudo">
+                <p>Encontre o que você deseja</p>
+                <h3>Catálogo</h3>
+            </div>
+            <div class="filtro">
+                <input type="text" class="procura" placeholder="Procure por um modelo">
+
+                <a id="procura-btn" style="display: flex; align-items: flex-end; justify-content: center; align-items: center; text-decoration: none;">Procure</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="container">
+
+        <script src="/js/db.js"></script>
+
+    </section>
+
+
+    <div class="contato" id="contato">
+        <h4>Entre em <span>Contato</span></h4>
+        <p>Nosso time está pronto para lhe atender</p>
+        <a href="contato.html" class="button2">Contato</a>
+    <div class="social">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</div>
+
+    <section class="footer">
+        <p>Praça General Osório, 125 - Centro, Curitiba-PR | Telefone: (41)12345-6789 | email: autoMobil@gmail.com</p>
+        <p>Copyright © 2022  <a class="logo" href="index.html"><i class="fa-solid fa-car" id="car"></i>Auto<span>Mobil</span></a></p>
+    </section>
+
+    <script src="/js/mobile-navbar.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
