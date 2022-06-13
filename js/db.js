@@ -28,3 +28,25 @@ function cadastrarUsuario(){
 
     fazPost(url, body)
 }
+
+/********************************/
+
+
+    var btnAPI = document.getElementById('procura-btn');
+    fetch("http://localhost:3000/carros")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+            btnAPI.onclick = ()=>{
+            container.innerHTML = '';  
+                for(var i=0 ; i<data.length; i++){   
+                    document.getElementById('container').innerHTML +=  
+                    "<div class = card>" +
+                        "<div class= product-image id = img-8>"+ "</div>" +
+                        "<h3>" + data[i].nome + "</h3>" +
+                        "<p>" + data[i].desc + "</p>" + 
+                        "<a href=/paginas/indisponivel.html class=card-btn>Saiba Mais</a>"
+                    "</div>"
+                }
+            }});
