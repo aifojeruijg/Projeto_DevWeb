@@ -50,3 +50,28 @@ function cadastrarUsuario(){
                     "</div>"
                 }
             }});
+
+
+
+/**************   DELETAR    ******************/
+
+
+        var deletarBTN = document.getElementById('deletar-btn');
+        var userDelete = document.getElementById('userDelete');
+            
+        fetch("http://localhost:3000/users")
+            .then(res => res.json())
+            .then(resposta => {
+                console.log(resposta)
+                deletarBTN.onclick =()=>{
+                    for(var i=0 ; i<resposta.length; i++){  
+                        if(userDelete.value=resposta.user){
+                            delete resposta[i];
+                            alert("Deu boa");
+                    } else{
+                        alert("deu ruim")
+                    }
+                }
+            }
+        }    
+            );
