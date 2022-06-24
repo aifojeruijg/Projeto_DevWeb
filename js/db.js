@@ -29,6 +29,29 @@ function cadastrarUsuario(){
     fazPost(url, body)
 }
 
+/************** LOGIN ******************/
+
+const btnLogin = document.querySelector('#login');
+    fetch("http://localhost:3000/users")
+    .then(res => res.json())
+    .then(resposta => {
+        console.log(resposta)
+        btnLogin.onclick =()=>{
+            let userConfirm = document.querySelector('#user');
+            let passwordConfirm = document.querySelector('#password')
+            let valueUser = userConfirm.value;
+            let valuePass = passwordConfirm.value;
+                for(var i=0; i < resposta.length; i++){
+                    if(valueUser == resposta[i].user && valuePass == resposta[i].password){
+                        window.location.href = 'http://127.0.0.1:5500/paginas/catalogo.html'
+                        alert("Bem vindo de volta: "+ resposta[i].name);
+                    }else{
+                        alert('Usuario ou senha invalidos')
+                    }
+                }
+        }
+    })
+
 /********************************/
 
 
@@ -65,6 +88,7 @@ function cadastrarUsuario(){
             const userDelete = document.querySelector('#userDelete');
             const value = userDelete.value;
                 for(var i=0; i < resposta.length; i++){
+                    alert(resposta)
                     if(value == resposta[i].user){
                         resposta.splice(i,1);
                         alert("Usuário deletado com sucesso!")
